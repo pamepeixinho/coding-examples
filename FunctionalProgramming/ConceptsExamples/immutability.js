@@ -5,36 +5,31 @@
   - Value mutation
 */
 
-// Not Functional **************
+/** Not immutable */
 
 // Reference Mutation: when you assign a new reference to an existing variable
-var x = { foo: 'bar' };
-var y = x;
+let x = { foo: 'bar' };
+let y = x;
 
 x = { lorem: 'ipsum' };
 console.log(x, y); // Prints "{lorem: 'ipsum'}, {foo: 'bar'}"
 
-// --------
+// ---------
 
 // Value Mutation: when you modify an existing object
-var x = { foo: 'bar' };
-var y = x;
+let x = { foo: 'bar' };
+let y = x;
 
 x.foo = 'baz';
 console.log(x, y); // Prints "{foo: 'baz'}, {foo: 'baz'}"
 
 
-// Functional **************
+/** immutable */
 
 const x = { foo: 'bar' };
 const y = { ...x, another: 'param' };
-
-console.log(x, y); // Prints "{foo: 'bar'}, {foo: 'bar', another: 'param'}"
-
-// or 
-
-const x = { foo: 'bar' };
-const y = Object.assign({}, x, { another: 'param'});
+// OR 
+//const y = Object.assign({}, x, { another: 'param'});
 
 console.log(x, y); // Prints "{foo: 'bar'}, {foo: 'bar', another: 'param'}"
 
