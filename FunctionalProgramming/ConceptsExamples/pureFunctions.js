@@ -1,5 +1,7 @@
 /**
  * Pure Functions: Returns the same result given same parameters
+ * 
+ * Note: file created to store examples, not posssible to run it
  */
 
 /**
