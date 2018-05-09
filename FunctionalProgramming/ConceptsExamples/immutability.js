@@ -1,8 +1,12 @@
 
 /**
-  Mutation can happen on two levels: 
-  - Reference mutation
-  - Value mutation
+ * Immutability
+ *
+ * Mutation can happen on two levels:
+ *  - Reference mutation
+ *  - Value mutation
+ * 
+ * Note: file created to store examples, not posssible to run it
 */
 
 /** Not immutable */

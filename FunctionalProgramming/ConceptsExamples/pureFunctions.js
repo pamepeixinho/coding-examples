@@ -1,5 +1,7 @@
 /**
  * Pure Functions: Returns the same result given same parameters
+ * 
+ * Note: file created to store examples, not posssible to run it
  */
 
 /**
@@ -58,4 +60,20 @@ checkAge(21);
 // => false
 
 
+/**
+* Example 3: Cachable
+*/
 
+const squareNumber = memoize((x) => x * x);
+
+squareNumber(4);
+//=> 16
+
+squareNumber(4); // returns cache for input 4
+//=> 16
+
+squareNumber(5);
+//=> 25
+
+squareNumber(5); // returns cache for input 5
+//=> 25
