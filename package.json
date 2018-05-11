@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pamepeixinho/presentation-coding-examples/issues"
   },
-  "homepage": "https://github.com/pamepeixinho/presentation-coding-examples#readme"
+  "homepage": "https://github.com/pamepeixinho/presentation-coding-examples#readme",
+  "dependencies": {
+    "ramda": "^0.25.0"
+  }
 }
