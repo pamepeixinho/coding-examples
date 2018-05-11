@@ -2,11 +2,13 @@
 /**
  * Immutability
  *
+ * Note: file created to store examples, not posssible to run it
+*/
+
+/**
  * Mutation can happen on two levels:
  *  - Reference mutation
  *  - Value mutation
- * 
- * Note: file created to store examples, not posssible to run it
 */
 
 /** Not immutable */
@@ -18,7 +20,6 @@ let y = x;
 x = { lorem: 'ipsum' };
 console.log(x, y); // Prints "{lorem: 'ipsum'}, {foo: 'bar'}"
 
-// ---------
 
 // Value Mutation: when you modify an existing object
 let x = { foo: 'bar' };

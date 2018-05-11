@@ -23,13 +23,13 @@ array.slice(0, 3);
 
 /** impure */
 array.splice(0, 3);
-//=> [1, 2, 3]
+// => [1, 2, 3]
 
 array.splice(0, 3);
-//=> [4, 5]
+// => [4, 5]
 
 array.splice(0, 3);
-//=> []
+// => []
 
 
 /**
