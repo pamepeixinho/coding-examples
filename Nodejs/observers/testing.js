@@ -4,7 +4,7 @@ var observable = new MyFancyObservable();
 observable.on('hello', (name) => {
   setTimeout(() => {
     console.log(name, new Date().toString())
-  }, 300)
+  }, 1000)
 });
 
 
