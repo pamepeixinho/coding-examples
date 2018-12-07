@@ -5,6 +5,8 @@ observable.on('hello', (name) => {
   setTimeout(() => {
     console.log(name, new Date().toString())
   }, 1000)
+
+  process.nextTick();
 });
 
 
