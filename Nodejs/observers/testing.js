@@ -2,7 +2,9 @@ var MyFancyObservable = require('./MyFancyObservable');
 var observable = new MyFancyObservable();
 
 observable.on('hello', (name) => {
-  console.log(name, new Date().toString())
+  setTimeout(() => {
+    console.log(name, new Date().toString())
+  }, 300)
 });
 
 
