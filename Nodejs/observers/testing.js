@@ -1,26 +1,31 @@
 var MyFancyObservable = require('./MyFancyObservable');
 var observable = new MyFancyObservable();
 
-observable.on('hello', (name) => {
+const t = () => {
+  console.log(' bla')
+
   setTimeout(() => {
     console.log(name, new Date().toString())
-  }, 1000)
+  }, 1000);
+  for (let i = 0; i < 201830981274652; i+=1) {
 
-  process.nextTick();
+  }
+}
+
+observable.on('write-firestore-agents-agenda', (name) => {
+  console.log(' fja')
+  t();
 });
 
-
 observable.on('write-firestore-agents-agenda', (newVisit) => {
-  // do some stuff
-  console.log('write-firestore-agents-agenda', new Date().toString());
+  Promise.resolve(() => { console.log('write-firestore-agents-agenda', new Date().toString()) })
 });
 
 // observable.hello('john');
 // observable.writeInAgenda();
 
-const SayHello = () => Promise.resolve(observable.hello('john'))
-const WriteAgenda = () => Promise.resolve(observable.writeInAgenda())
+const WriteAgenda = () => Promise.resolve(() => observable.writeInAgenda())
 
+const SayHello = () => Promise.resolve(() => observable.hello('john'))
 
-const promises = Promise.all([SayHello(), WriteAgenda()])
-
+Promise.all([WriteAgenda(), SayHello()]);
