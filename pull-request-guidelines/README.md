@@ -82,9 +82,7 @@ They know what, how, who it's doing and when it's necessary to review.
 
 ### New tips to review a front-end PR
 
-**References**
-
-- <https://goo.gl/VWFEMQ>
+> // TODO: wip
 
 ### New tips to review a back-end PR
 
